@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registretion form</title>
+</head>
+<link rel="stylesheet" href="form.css">
+
+<body>
+    <header>
+        <nav>
+            <img src="/img/logo1.png" class="logo1">
+
+            <div class="box1">
+                <a href="/index.html">home </a>
+                <a href="#">form</a>
+                <a href="#">admin</a>
+                <a href="#">about</a>
+                <span class="line"></span>
+            </div>
+
+
+            <img src="/img/logo2.png" class="logo2">
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>registretion form</h1>
+        <p>Please give right informetion.Unfortunatly you are beging not selected or it effect your profile.
+            <br><br>
+            <span>*All feilds Are requred to fill mandatry. </span>
+        </p>
+        <hr>
+
+        <!-- MAIN FORM  -->
+        <form action="#">
+            <div id="btn">
+            <div class="form">
+                <section class="perinfo">
+
+                    <h3>Personal Info</h3>
+
+                    <label>Full-Name</label><br>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Surname"><br>
+
+                    <label>Father's Name(Optional)</label><br>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Surname"><br>
+
+                    <div class="photo">
+                        <label for="">Upload Your Photograph:</label>
+                        <input type="file" class="in">
+                    </div>
+
+                </section>
+
+                <section class="addres">
+
+                    <h3>Address Info</h3>
+
+                    <label>Landmark/Street/Village</label><br>
+                    <input type="text"><br>
+
+                    <label>City</label><br>
+                    <input type="text"><br>
+
+                    <label>State</label><br>
+                    <input type="text"><br>
+
+                    <label>Pincode</label><br>
+                    <input type="text"><br>
+
+
+
+                </section>
+
+                <section class="techinfo">
+                    <h3>Select Technology</h3>
+
+                    <label for="cat">Select</label><br>
+
+                    <select name="cat" id="cat" onchange="chck()">
+                        <option value=""></option>
+                        <option value="FOR1">Front end</option>
+                        <option value="BACK1">Back end</option>
+                    </select>
+
+                    <label for="tech" id="lab">Technology</label>
+                    <select name="technology" id="frontend">
+                        <option value=""></option>
+                        <option value="react">React</option>
+                        <option value="vue js">Vue JS</option>
+                        <option value="css_fremwork">tailwent/Bootstrap</option>
+                        <option value="angular">Angular</option>
+                    </select>
+
+                    <select name="technology" id="backend">
+                        <option value="">Select</option>
+                        <option value="spring boot">Spring-Boot</option>
+                        <option value="mern">MERN/MEAN Stack</option>
+                        <option value="django">Django</option>
+                        <option value=".net">.NET</option>
+                    </select><br><br>
+
+
+                    <div class="contect">
+                        <h3>Contect Info</h3>
+
+                        <label>Mobile No.</label><br>
+                        <input type="number" m><br>
+
+                        <label>E-mail</label><br>
+                        <input type="email"><br>
+                    </div>
+                </section>
+
+            </div>
+
+            
+                <section class="buttons">
+                    <button type="reset" style="background-color: rgb(235, 57, 57);">Reset</button>
+                    <button type="submit" onclick="otp()">Submit</button>
+                </section>
+            </div>
+
+        </form>
+
+
+        <div class="act" id="otp">
+            <!-- OTP Form -->
+            <form action="" class="otp">
+                <h1 style="color: rgb(5, 104, 68);">OTP Velidation</h3>
+                    <p style=" text-transform:uppercase;">An otp is send to your E-mail.</p>
+
+                    <input type="text" id="input">
+                    <button type="submit" id="btn">Verify</button>
+            </form>
+        </div>
+
+        <span>.</span>
+    </main>
+
+    <script src="demo.js"></script>
+</body>
+
+</html>
